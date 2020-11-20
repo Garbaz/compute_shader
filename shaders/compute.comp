@@ -22,10 +22,10 @@ void main() {
     // if (abs(pos.z) >= 10.0 && pos.z * vel.z > 0) {
     //     vel.z = -vel.z;
     // }
-    if(length(pos) > 10.0 && dot(vel,pos) > 0) {
+    if (length(pos) > 10.0 && dot(vel, pos) > 0) {
         vel = -vel;
     }
-    pos += 0.01 * vel; // TODO: deltatime
+    pos += 0.01 * vel;  // TODO: deltatime
 
     positions[gid] = pos;
     velocities[gid] = vel;

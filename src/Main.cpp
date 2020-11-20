@@ -10,7 +10,7 @@
 #include "Camera.hpp"
 #include "Main.hpp"
 
-#define DBG(s) std::cerr << __LINE__ << " : " << s << std::endl
+#define DBG(s) std::cerr << "DEBUG @" <<  __LINE__ << " : " << s << std::endl
 
 #define PRINT_DEBUG true
 
@@ -19,6 +19,7 @@
 #define BINDING_INDEX_POS (4)
 #define BINDING_INDEX_VEL (5)
 /** KEEP IN SYNC WITH SHADER**/
+
 
 #define NUM_WORKGROUPS (1024)
 
